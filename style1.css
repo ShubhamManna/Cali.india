@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap');
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    top: 0px;
+    left: 0px;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    width: 100%;
+    max-height: 900px;
+    min-height: 600px;
+    color: rgb(155, 132, 132);
+    background-image: url("assets/banner.png");
+    background-size:cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 17px;
+    color: #000;
+    background-color: #fff;
+    filter: invert(0);
+}
+
+a, button, div, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+*, :focus {
+    outline: none;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+div {
+    display: block;
+}
+
+.header-center{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.4);
+    
+}
+
+.header-center .menu{
+    margin-bottom: 6px;
+}
+
+
+.sidebarMenu {
+    height: 1500px;
+    width: 300px;
+    float: left;
+    position: fixed;
+    padding: 13px 0px 0px 45px;
+    left: 0;
+    top: 76px;
+    transform: translateX(-300px);
+    transition: transform 250ms ease-in-out;
+    background-color: #fff;
+    border-right:1px solid #eee;
+}
+.sidebarMenu h3{
+    color: #262626;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    clear: left;
+    margin:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.checklist ul li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 7px 0 7px 23px;
+}
+
+.checklist li span{
+	float:left;
+	width:11px;
+	height:11px;
+	margin-left:-23px;
+	margin-top: 2px;
+	border: 1px solid #d1d3d7;
+	position:relative;	
+}
+
+.categories .brands .vibes li{
+	-webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;
+}
+
+.checklist li a{
+	color:#676a74;
+	text-decoration:none;	
+	-webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;
+}
+
+.checklist li a:hover{	
+	color: #000;
+	-webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;
+}
+
+.checklist a:hover span{ 	
+	border-color:#000;
+    -webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;	
+}
+
+.checklist a span span{border:none;margin:0;float:none; position:absolute;top:0;left:0;}
+
+.checklist a .x{
+	display:block;
+	width:0;	 
+	height:2px;
+	background:#5ff7d2;
+	top:6px;
+	left:2px;	
+	-ms-transform: rotate(45deg); 
+   	-webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);	
+	-webkit-transition: all 50ms ease-out;
+}
+
+.checklist a .x.animate{
+	width:4px;
+	-webkit-transition: all 100ms ease-in;
+	   -moz-transition: all 100ms ease-in;
+	    -ms-transition: all 100ms ease-in;
+	     -o-transition: all 100ms ease-in;
+	        transition: all 100ms ease-in;
+}
+.checklist a .y{
+	display:block;
+	width:0px; 
+	height:2px;
+	background:#5ff7d2;
+	top:4px;
+	left:3px;	
+	-ms-transform: rotate(13deg); 
+   	-webkit-transform: rotate(135deg); 
+    transform: rotate(135deg);	
+	-webkit-transition: all 50ms ease-out;
+}
+.checklist a .y.animate{
+	width:8px;
+	-webkit-transition: all 100ms ease-out;
+	   -moz-transition: all 100ms ease-out;
+	    -ms-transition: all 100ms ease-out;
+	     -o-transition: all 100ms ease-out;
+	        transition: all 100ms ease-out;
+}
+
+.checklist .checked span{
+	border-color:#8d939f;
+}
+#sidebar img{margin-top:6px;}
+
+input[type="checkbox"]:checked ~ .sidebarMenu {
+    transform: translateX(0);
+    filter: invert(0);
+}
+
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 30px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+.flex-left, .flex-right {
+    flex-basis: 0%;
+    flex-grow: 1;
+    padding-top: 0%;
+    display: inline-flex;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.flex-right {
+    justify-content: flex-end;
+    text-align: right;
+}
+.flex-left {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+#menu-icon{
+    margin-left: 32px;
+    margin-right: 6px;
+}
+
+#menu-text{
+    margin-left: 6px;
+}
+
+#like-logo{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid rgba(3, 3, 3, 0.4);
+}
+#mycart-logo{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid rgba(3, 3, 3, 0.4);
+}
+#search-logo{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#grid-selector{
+    display: flex;
+	height: 10px;
+	width: 100%;
+    justify-content: space-between;
+	padding: 40px 320px 40px 320px;
+	float: left;
+	color: #5d5f68;
+	font-size: 14px;
+}
+#grid-menu{
+    display: inline-flex;
+    align-items: flex-start;
+    list-style: none;
+}
+#grid-menu li{
+    margin-left: 20px;
+}
+
+#grid-menu img{
+    height: 15px;
+}
+
+#grid-menu li.smallGrid img{filter: invert(.7);}
+#grid-menu li.largeGrid img{filter: invert(.7);}
+#grid-menu li.smallGrid a.active img{filter: invert(.2);}
+#grid-menu li.largeGrid a.active img{filter: invert(.2);}
+
+
+footer{
+    height: 250px;
+    background-color: #000;
+    padding: 10px 60px 10px 60px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.footertext{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlist{
+    text-align: left;
+    width: 100%;
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footerlist li{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.followus{
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+}
+.followus li{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.smicons{
+    filter: invert(1);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.smicons a{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.copyright{
+    margin-top: 30px;
+    text-align: center;
+    font-size: x-small;
+}

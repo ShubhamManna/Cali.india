@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap');
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+*{
+    letter-spacing: 0.2rem;
+}
+a{
+    text-decoration: none;
+}
+
+.topbanner{
+    padding-bottom: 0px;
+    padding: 0 12% 0 12%;
+    width: 100%;
+    background-color: #fff;
+}
+.loginLink{
+    padding-top: 1.4rem;
+    margin-left: 0px;
+    padding-left: 50px;
+}
+.loginLink a{
+    color: rgb(85, 85, 85);
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+.loginLink a:hover{
+    color: rgb(0, 0, 0);
+    font-size: .8rem;
+}
+
+.mainlogo{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.header-links a{
+    text-decoration: none;
+}
+
+.linkbanner{
+    padding-bottom: 0px;
+    text-align: center;
+    padding-top: px;
+    background-color: #fff;
+}
+.linkbanner a{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: .8rem;
+    transition: 0.5s ease;
+}
+.linkbanner a:hover{
+    color:rgb(0, 0, 0);
+}
+.linkbanner button{
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: .8rem;
+    margin-top: 1px;
+    transition: 0.5s ease;
+}
+.linkbanner button:hover{
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+}
+
+.btn, .show, .btn-secondary, .dropdown-toggle{
+    background-color: #fff;
+    border: none;
+}
+.btn-check:focus+.btn-secondary, .btn-secondary:focus{
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+    border: none;
+    box-shadow: none;
+}
+.dropdown-item{
+    background-color: rgba(240, 255, 255, 0);
+    color: black;
+}
+.dropdown-item:hover{
+    background-color: rgba(240, 255, 255, 0);
+    color: black;
+}
+.dropdown-menu{
+    text-transform: uppercase;
+}
+.banner{
+    margin-top: 100px;
+    background-image: url('/Cali.india/assets/1.JPG');
+    filter: brightness(70%) contrast(1.2);
+    box-shadow: inset 0 0 400px rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 45rem;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-size: cover;
+    transition: 1s ease;
+}
+.banner:hover{
+    filter: brightness(90%) contrast(1.2);
+}
+
+.banner h5{
+    font-size: 3rem;
+    font-weight: 400;
+    width: fit-content;
+    color: rgba(85, 85, 85, 0.87);
+    background-color: rgba(219, 219, 219, 0.466);
+}
+.banner h4{
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    background-color: rgba(44, 44, 44, 0.5);
+    width: fit-content;
+}
+.banner p{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    color: rgb(224, 214, 214);
+}
+.banner button{
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    transition: 1s ease;
+}
+.banner button:hover{
+    border: 1px solid #000;
+    background-color: rgba(221, 201, 157, 0);
+}
+
+.home{
+    margin-top: 6.1%;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+/*titles*/
+.titles{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 10px;
+    font-weight: 800;
+    transition: 0.7s ease;
+}
+.titles:hover{
+    color: #000;
+}
+
+/*slider items*/
+.slider-texts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.767);
+    margin-top: 300px;
+    margin-bottom: 40px;
+    width: 100%;
+    transition: 0.7s ease;
+    font-size: 1.6rem;
+    opacity: 0;
+}
+.slider-button{
+    opacity: 0;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: none;
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-size: 1rem;
+    transition: 1s ease;
+}
+
+
+
+/*Vibes*/
+.vibes-slider{
+    position: relative;
+}
+
+.vibes-slider .slider-btn .prev,
+.vibes-slider .slider-btn .next{
+    padding: .5rem 1rem;
+    background-color:aliceblue;
+    border-radius: .2rem;
+    margin: 10px 0 10px 0;
+    opacity: 0.1;
+    transition: opacity .7s ease;
+}
+.vibes-slider:hover .slider-btn .prev,
+.vibes-slider:hover .slider-btn .next{
+    opacity: 0.5;
+}
+.vibes-item-1{
+    background-image: url(/Cali.india/assets/covers/badbougee.JPG);
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.vibes-item-2{
+    background-image: url(/Cali.india/assets/covers/bossnah.JPG);
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.vibes-item-3{
+    background-image: url(/Cali.india/assets/covers/dailycasual.jpeg);
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.vibes-item-4{
+    background-image: url(/Cali.india/assets/covers/hotgirl.JPG);
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.vibes-item-5{
+    background-image: url(/Cali.india/assets/covers/street.png);
+    background-size: cover;
+    height:550px;
+    width: 100%;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.vibes-items{
+    padding: 50px 50px 50px 50px;
+    width: 100%;
+}
+.vibes-items:hover{
+    filter: contrast(1) grayscale(0);
+    box-shadow: inset 0 0 400px rgba(0, 0, 0, 0.479); 
+}
+.vibes-items:hover .slider-texts{
+    opacity: 1;
+    margin-top: 200px;
+}
+.vibes-items:hover .slider-button{
+    opacity: 1;
+}
+
+/*Categories*/
+.categories-slider{
+    position: relative;
+}
+.categories-slider-one img:hover{
+    filter: contrast(1) grayscale(0);
+}
+.categories-slider .slider-btn .prev,
+.categories-slider .slider-btn .next{
+    padding: .5rem 1rem;
+    background-color:aliceblue;
+    border-radius: .2rem;
+    margin: 10px 0 10px 0;
+    opacity: 0.1;
+    transition: opacity .7s ease;
+}
+.categories-slider:hover .slider-btn .prev,
+.categories-slider:hover .slider-btn .next{
+    opacity: 0.5;
+}
+.categories-item-1{
+    background-image: url(/Cali.india/assets/covers/accessories.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-2{
+    background-image: url(/Cali.india/assets/covers/shirts.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-3{
+    background-image: url(/Cali.india/assets/covers/dresses.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-4{
+    background-image: url(/Cali.india/assets/covers/sets.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-5{
+    background-image: url(/Cali.india/assets/covers/tops.png);
+    background-size: cover;
+    height:550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-6{
+    background-image: url(/Cali.india/assets/covers/bottoms.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-7{
+    background-image: url(/Cali.india/assets/covers/tshirts.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-8{
+    background-image: url(/Cali.india/assets/covers/blouses.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-9{
+    background-image: url(/Cali.india/assets/covers/sweatshirts.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-10{
+    background-image: url(/Cali.india/assets/covers/jumpsuits.png);
+    background-size: cover;
+    height:550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+
+.categories-item-11{
+    background-image: url(/Cali.india/assets/covers/jackets.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-12{
+    background-image: url(/Cali.india/assets/covers/croptop.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-13{
+    background-image: url(/Cali.india/assets/covers/hoodies.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-item-14{
+    background-image: url(/Cali.india/assets/covers/crophoodies.png);
+    background-size: cover;
+    height: 550px;
+    filter: contrast(1.2) grayscale(1);
+    transition: 0.7s ease;
+}
+.categories-items{
+    padding: 50px 50px 50px 50px;
+}
+.categories-items:hover{
+    filter: contrast(1) grayscale(0);
+    box-shadow: inset 0 0 400px rgba(0, 0, 0, 0.479); 
+}
+.categories-items:hover .slider-texts{
+    opacity: 1;
+    margin-top: 200px;
+}
+.categories-items:hover .slider-button{
+    opacity: 1;
+}
+
+/*sample slider*/
+.site-slider{
+    position: relative;
+}
+.position-top{
+    position: absolute;
+    top: 45%;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+    padding: .5rem 1rem;
+    background-color:aliceblue;
+    border-radius: .2rem;
+    margin: 10px 0 10px 0;
+    opacity: 0.1;
+    transition: opacity .7s ease;
+}
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+    opacity: 0.5;
+}
+.right-0{
+    right:0;
+}
+
+/*Slick dots*/
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+.slick-dots li{
+    display: inline;
+    margin: 0 0.6rem;
+}
+.slick-dots button{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    text-indent: -99999999px;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+.slick-dots li.slick-active button{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+
+#categories .one img{
+    width: 100%;
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#categories .one .details{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3 ease;
+}
+
+footer{
+    background-color: black;
+    font-weight: 100;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+footer h5{
+    color: aliceblue;
+    font-weight:400;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+footer h5 a{
+    color: #fff;
+}
+footer h5 a:hover{
+    color: rgba(255, 255, 255, 0.801);
+}
+footer h6{
+    color:rgb(255, 255, 255);
+    font-weight:200;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+footer li{
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+    font-weight: 200;
+}
+footer li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+footer p{
+    color: aliceblue;
+    font-size: 0.8rem;
+    padding-bottom: 4px;
+    font-weight: 200;
+}
+.footer-one{
+    padding: 0 20px 0 20px;
+}
+.footer-one a{
+    padding: 20px 10px 20px 10px;
+    margin-top: 10px;
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+}
+.about{
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.instagram-media{
+    padding-top: 50px;
+    max-height: 190px;
+    padding-right: 50px;
+
+}
+
+.footerIcon{
+    color: #fff;
+    opacity: 0.7;
+}
+.footerIcon:hover{
+    opacity: 1;
+}
+
+/*login Page*/
+.loginPage{
+    margin-top: 100px;
+    background-image: url("/Cali.india/assets/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-size: cover;
+    transition: 1s ease;
+    padding: 20px 0 20px 0;
+}
+
+form {
+    background-color: rgba(105, 105, 105, 0.473);
+    padding: 0px 50px 25px 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-size: 1rem;
+    transition: 1s ease;
+}
+form:hover{
+    background-color: rgba(105, 105, 105, 0.267);
+}
+
+.logintitles{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.904);
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    transition: 0.7s ease;
+}
+
+.btn{
+    border-radius: 0px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/*About Us page*/
+.aboutUs{
+    background-image: url("/Cali.india/assets/6.JPG");
+    margin-top: 100px;
+    width: 100%;
+    height: fit-content;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: 1s ease;
+}
+.aboutContent{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: 50px 30px 50px 30px;
+}
+.aboutContent h3{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.aboutContent h6{
+    margin-top:30px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.aboutContent p{
+    margin-top:20px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.aboutContent h4{
+    margin-top:30px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.aboutIcon{
+    margin-top: 5px;
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 1.5rem;
+    transition: .7s ease;
+}
+.aboutIcon:hover{
+    margin-top: 5px;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+/*Product page*/
+.productpagetitle{
+    margin-top: 125px;
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+    transition: 0.7s ease;
+}
+.productpagetitle:hover{
+    color: #000;
+}
+.products{
+    display: flex;
+    justify-content:center;
+}
+.card{
+    width: 18rem;
+    height: 35.5rem;
+    transition: 1s ease;
+    margin: 15px 20px 15px 20px;
+}
+.card:hover{
+    transform: scale(1.05);
+    border: #000 solid 1px;
+}
+.card-button{
+    background-color: #fff;
+    color: #000;
+    border: #000 solid 1px;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+.card-img-top{
+    margin-top: 10px;
+    height: 20rem;
+}
+.card-title{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.card-text{
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.size, .price{
+    margin-bottom: 0.4rem;
+}
