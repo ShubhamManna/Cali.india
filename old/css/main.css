@@ -1,0 +1,402 @@
+.field_error , .login_error{
+	color: red;
+	font-size: 12px;
+}
+#reg_status , #log_status{
+	color: green;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap');
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+*{
+    letter-spacing: 0.2rem;
+}
+a{
+    text-decoration: none;
+}
+.topbanner{
+    padding-bottom: 0px;
+    padding: 0 12% 0 12%;
+    width: 100%;
+    background-color: #fff;
+}
+.loginLink{
+    padding-top: 1.4rem;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+.loginLink a{
+    color: rgb(85, 85, 85);
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+.loginLink a:hover{
+    color: rgb(0, 0, 0);
+    font-size: .8rem;
+}
+
+.mainlogo{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.header-links a{
+    text-decoration: none;
+}
+
+.linkbanner{
+    padding-bottom: 0px;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #fff;
+}
+.linkbanner a{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: .8rem;
+    transition: 0.5s ease;
+}
+.linkbanner a:hover{
+    color:rgb(0, 0, 0);
+}
+.linkbanner button{
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    margin-top: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: .8rem;
+    transition: 0.5s ease;
+}
+.linkbanner button:hover{
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+}
+
+.btn, .show, .btn-secondary, .dropdown-toggle{
+    background-color: #fff;
+    border: none;
+}
+.btn-check:focus+.btn-secondary, .btn-secondary:focus{
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+    border: none;
+    box-shadow: none;
+}
+.dropdown-item{
+    background-color: rgba(240, 255, 255, 0);
+    color: black;
+}
+.dropdown-item:hover{
+    background-color: rgba(240, 255, 255, 0);
+    color: black;
+}
+.dropdown-menu{
+    text-transform: uppercase;
+}
+.banner{
+    background-image: url('/php/ecom/website/assets/1.JPG');
+    filter: brightness(70%);
+    box-shadow: inset 0 0 400px rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 50rem;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-size: cover;
+    transition: 1s ease;
+}
+.banner:hover{
+    filter: brightness(100%);
+}
+
+.banner h5{
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.87);
+    margin-top: 150px;
+}
+.banner h4{
+    font-size: 5rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+}
+.banner p{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    color: rgb(224, 214, 214);
+}
+.banner button{
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    transition: 1s ease;
+}
+.banner button:hover{
+    border: 1px solid #000;
+    background-color: rgba(221, 201, 157, 0);
+}
+
+.home{
+    margin-top: 6.1%;
+    margin-bottom: 1px;
+    position: relative;
+}
+.vibes-slider{
+    position: relative;
+}
+.titles{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    transition: 0.7s ease;
+}
+.titles:hover{
+    color: #000;
+}
+.site-slider{
+    position: relative;
+}
+.position-top{
+    position: absolute;
+    top: 45%;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+    padding: .5rem 1rem;
+    background-color:aliceblue;
+    border-radius: .2rem;
+    margin: 10px 0 10px 0;
+    opacity: 0.1;
+    transition: opacity .7s ease;
+}
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+    opacity: 0.5;
+}
+.right-0{
+    right:0;
+}
+
+/*Slick dots*/
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+.slick-dots li{
+    display: inline;
+    margin: 0 0.6rem;
+}
+.slick-dots button{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    text-indent: -99999999px;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+.slick-dots li.slick-active button{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+
+#categories .one img{
+    width: 100%;
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#categories .one .details{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3 ease;
+}
+
+
+
+footer{
+    background-color: black;
+    font-weight: 100;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+footer h5{
+    color: aliceblue;
+    font-weight:400;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+footer h6{
+    color:azure;
+    font-weight:200;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+footer li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: azure;
+    text-decoration: none;
+
+}
+footer li a:hover{
+    color: bisque;
+}
+
+footer p{
+    color: aliceblue;
+    font-size: 0.8rem;
+    padding-bottom: 4px;
+}
+.footer-one{
+    padding: 0 20px 0 20px;
+}
+.footer-one a{
+    padding: 20px 10px 20px 10px;
+    margin-top: 10px;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+}
+.about{
+    font-size: 0.8rem;
+}
+
+.instagram-media{
+    padding-top: 50px;
+    max-height: 190px;
+    padding-right: 50px;
+
+}
+
+.fab{
+    color: #fff;
+    opacity: 0.7;
+}
+.fab:hover{
+    opacity: 1;
+}
+
+.loginPage{
+    margin-top: 100px;
+    background-image: url("/php/ecom/website/assets/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-size: cover;
+    transition: 1s ease;
+    padding: 20px 0 20px 0;
+}
+
+form {
+    background-color: hsla(0, 0%, 88%, 0.521);
+    padding: 0px 50px 25px 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-size: 1rem;
+    transition: 1s ease;
+}
+form:hover{
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.logintitles{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.904);
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    transition: 0.7s ease;
+}
+
+.btn{
+    border-radius: 0px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.checkout_table td{
+    width: 16.67%;
+}
+#chktlogin{
+    background-image: none;
+}
