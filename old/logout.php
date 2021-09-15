@@ -1,0 +1,9 @@
+<?php
+require('connection.inc.php');
+require('functions.inc.php');
+unset($_SESSION['USER_S']);
+unset($_SESSION['U_ID']);
+unset($_SESSION['U_NAME']);
+header('location:index.php');
+die(); 
+?>
