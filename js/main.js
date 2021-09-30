@@ -3,7 +3,7 @@ $(".vibes-slider-one")
 .not(".slick-initialized")
 .slick({
     slidesToShow: 3,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: ".vibes-slider .slider-btn .prev",
     nextArrow: ".vibes-slider .slider-btn .next"
@@ -13,7 +13,7 @@ $(".categories-slider-one")
 .not(".slick-initialized")
 .slick({
     slidesToShow: 3,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: ".categories-slider .slider-btn .prev",
     nextArrow: ".categories-slider .slider-btn .next"

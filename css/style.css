@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 
 html, body{
     margin: 0px;
     padding: 0px;
     background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     width: 100%;
-}
-*{
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.01rem;
 }
 a{
     text-decoration: none;
@@ -57,9 +59,15 @@ a{
     margin-right: 15px;
     font-size: .8rem;
     transition: 0.5s ease;
+    font-weight: 700;
 }
-.linkbanner a:hover{
+.linkbanner ul a{
     color:rgb(0, 0, 0);
+    margin-left: 0px;
+}
+.linkbanner ul a:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 .linkbanner button{
     background-color: #fff;
@@ -71,6 +79,7 @@ a{
     font-size: .8rem;
     margin-top: 1px;
     transition: 0.5s ease;
+    font-weight: 700;
 }
 .linkbanner button:hover{
     background-color: #fff;
@@ -100,7 +109,7 @@ a{
 }
 .banner{
     margin-top: 100px;
-    background-image: url('/Cali.india/assets/1.JPG');
+    background-image: url('/Cali.india/assets/banner\ \(2\).png');
     filter: brightness(70%) contrast(1.2);
     box-shadow: inset 0 0 400px rgba(0, 0, 0, 0.479);
     width: 100%;
@@ -133,7 +142,7 @@ a{
 }
 .banner p{
     padding-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(224, 214, 214);
 }
 .banner button{
@@ -152,16 +161,18 @@ a{
     margin-bottom: 1px;
     position: relative;
 }
-
 /*titles*/
 .titles{
     position: relative;
     text-align: center;
     margin-top: 20px;
-    font-size: 2rem;
+    background-color: rgba(231, 231, 231, 0.247);
+    font-size: 1.6rem;
     color: rgba(0, 0, 0, 0.6);
     padding-bottom: 10px;
-    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
     transition: 0.7s ease;
 }
 .titles:hover{
@@ -217,7 +228,7 @@ a{
 .vibes-item-1{
     background-image: url(/Cali.india/assets/covers/badbougee.JPG);
     background-size: cover;
-    height: 550px;
+    height: 450px;
     width: 100%;
     filter: contrast(1.2) grayscale(1);
     transition: 0.7s ease;
@@ -225,7 +236,7 @@ a{
 .vibes-item-2{
     background-image: url(/Cali.india/assets/covers/bossnah.JPG);
     background-size: cover;
-    height: 550px;
+    height: 450px;
     width: 100%;
     filter: contrast(1.2) grayscale(1);
     transition: 0.7s ease;
@@ -233,7 +244,7 @@ a{
 .vibes-item-3{
     background-image: url(/Cali.india/assets/covers/dailycasual.jpeg);
     background-size: cover;
-    height: 550px;
+    height: 450px;
     width: 100%;
     filter: contrast(1.2) grayscale(1);
     transition: 0.7s ease;
@@ -241,7 +252,7 @@ a{
 .vibes-item-4{
     background-image: url(/Cali.india/assets/covers/hotgirl.JPG);
     background-size: cover;
-    height: 550px;
+    height: 450px;
     width: 100%;
     filter: contrast(1.2) grayscale(1);
     transition: 0.7s ease;
@@ -249,7 +260,7 @@ a{
 .vibes-item-5{
     background-image: url(/Cali.india/assets/covers/street.png);
     background-size: cover;
-    height:550px;
+    height:450px;
     width: 100%;
     filter: contrast(1.2) grayscale(1);
     transition: 0.7s ease;
@@ -476,16 +487,25 @@ a{
     transition: 0.3 ease;
 }
 
+.brands{
+    text-align: center;
+    margin-top: 10px;
+}
+.brandlogos{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 footer{
     background-color: black;
-    font-weight: 100;
+    font-weight: 300;
     justify-content: space-between;
     padding-top: 50px;
 }
 footer h5{
     color: aliceblue;
-    font-weight:400;
-    font-size: 1rem;
+    font-weight:700;
+    font-size: 0.8rem;
     padding-bottom: 10px;
 }
 footer h5 a{
@@ -496,7 +516,7 @@ footer h5 a:hover{
 }
 footer h6{
     color:rgb(255, 255, 255);
-    font-weight:200;
+    font-weight:300;
     font-size: 0.8rem;
     padding-top: 10px;
 }
@@ -508,7 +528,7 @@ footer li a{
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.781);
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 300;
 }
 footer li a:hover{
     color: rgb(255, 255, 255);
@@ -518,7 +538,7 @@ footer p{
     color: aliceblue;
     font-size: 0.8rem;
     padding-bottom: 4px;
-    font-weight: 200;
+    font-weight: 300;
 }
 .footer-one{
     padding: 0 20px 0 20px;
@@ -610,7 +630,7 @@ form:hover{
 
 /*About Us page*/
 .aboutUs{
-    background-image: url("/Cali.india/assets/6.JPG");
+    background-image: url("/Cali.india/assets/aboutUs.jpg");
     margin-top: 100px;
     width: 100%;
     height: fit-content;
@@ -630,19 +650,19 @@ form:hover{
     padding: 50px 30px 50px 30px;
 }
 .aboutContent h3{
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
 }
 .aboutContent h6{
     margin-top:30px;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
 }
 .aboutContent p{
     margin-top:20px;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
 }
 .aboutContent h4{
@@ -684,14 +704,21 @@ form:hover{
     justify-content:center;
 }
 .card{
-    width: 18rem;
-    height: 35.5rem;
-    transition: 1s ease;
-    margin: 15px 20px 15px 20px;
+    width: 20rem;
+    height: 28rem;
+    transition: 0.5s ease;
+    margin: 15px 7px 15px 7px;
+    display: flex;
+    border: none;
+    border-radius: 0;
+}
+.cardbody{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.3rem;
 }
 .card:hover{
     transform: scale(1.05);
-    border: #000 solid 1px;
 }
 .card-button{
     background-color: #fff;
@@ -702,19 +729,33 @@ form:hover{
 }
 .card-img-top{
     margin-top: 10px;
+    object-fit: cover;
     height: 20rem;
+    border-radius: 0;
 }
 .card-title{
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 0.8rem;
-}
-
-.card-text{
-    margin-top: 0.3rem;
-    margin-bottom: 0.2rem;
+    font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    color: #000;
+}
+.card-desc{
+    text-transform: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 0.1rem;
+    color: #000;
+}
+.card-price{
+    text-transform: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+    color: #000;
+}
+.card-link:hover{
+    color: #000;
 }
 .heads{
     margin-bottom: 0.4rem;
@@ -895,3 +936,33 @@ section {
 }
 
 /*t&c*/  
+.accordion{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.accordion li{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    color: #000;
+}
+.acc-btn{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.acc-btn:not(.collapsed){
+    background-color: rgba(0, 0, 0, 0.911);
+    color: #fff;
+    box-shadow: none;
+}
+.acc-btn:focus{
+    border: 1px solid #000;
+    box-shadow: none;
+}
+.acc-btn:not(.collapsed)::after{
+    filter: contrast(0);
+}
+
